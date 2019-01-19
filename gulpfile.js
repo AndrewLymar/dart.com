@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 gulp.task('js', function () {
 	return gulp.src([
 		'app/js/jquery.min.js',
+		'app/js/slick.min.js',
 		'app/js/common.js'
 		])
 		.pipe(concat('scripts.min.js'))

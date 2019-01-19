@@ -14,8 +14,8 @@
 	<header>
 		<div class="container">
 			<div class="flex-row">
-				<div class="flex-row flex-full flex-middle flex-between logo">
-					<div class="flex-row flex-middle">
+				<div class="flex-row flex-full flex-middle flex-between">
+					<div class="flex-row flex-middle flex-center logo">
 						<img src="img/logo.png" alt="logo" class="logo-img">
 						<div class="flex-col logo-text">
 							<h1>Dart<br><span>service manager</span></h1>
@@ -51,7 +51,7 @@
 				<h3>Project Management Tool</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
 			</div>
-			<div class="flex-row flex-between">
+			<div class="flex-row flex-between flex-wrap">
 				<div class="flex-col flex-middle box">
 					<img src="img/list.png" alt="list">
 					<div class="box-text">
@@ -78,7 +78,7 @@
 				<button class="get-started">Get started</button>
 			</div>
 		</div>
-		<div class="flex-row statistics">
+		<div class="flex-row flex-wrap statistics">
 			<div class="flex-row flex-full flex-centered statistics-block">
 				<div class="flex-row flex-centered">
 					<div class="flex-row flex-centered statistics-img-container">
@@ -160,7 +160,39 @@
 					<div class="flex-row flex-full flex-middle flex-between services-box-top">
 						<div class="flex-row flex-middle services-box-top-title">
 							<img src="img/group.png" alt="mail">
-							<div>Inbox</div>
+							<div>Team</div>
+						</div>
+						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
+					</div>
+					<div class="flex-row flex-middle flex-between services-box-dropped">
+						<img src="img/statistics.jpg" alt="statistics">
+						<div class="services-box-dropped-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							<p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+						</div>
+					</div>
+				</div>
+				<div class="services-box">
+					<div class="flex-row flex-full flex-middle flex-between services-box-top">
+						<div class="flex-row flex-middle services-box-top-title">
+							<img src="img/settings.png" alt="settings">
+							<div>Settings</div>
+						</div>
+						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
+					</div>
+					<div class="flex-row flex-middle flex-between services-box-dropped">
+						<img src="img/statistics.jpg" alt="statistics">
+						<div class="services-box-dropped-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							<p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+						</div>
+					</div>
+				</div>
+				<div class="services-box">
+					<div class="flex-row flex-full flex-middle flex-between services-box-top">
+						<div class="flex-row flex-middle services-box-top-title">
+							<img src="img/rss_feed.png" alt="feed">
+							<div>Feed</div>
 						</div>
 						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
 					</div>
@@ -175,9 +207,130 @@
 			</div>
 		</div>
 	</section>
+	<section class="s-reviews">
+		<div class="container">
+			<div class="flex-row flex-between flex-col-xl flex-middle-xl">
+				<div class="flex-col flex-top flex-middle-xl reviews-text">
+					<h2>What our customers have to say about us.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<button class="button-start">Get started</button>
+				</div>
+				<div class="flex-col flex-middle reviews">
+					<div class="flex-col flex-middle">
+						<div class="flex-col">
+							<div class="flex-row flex-middle review">
+								<img src="img/avatar1.png" class="avatar" alt="avatar1">
+								<div class="flex-col flex-middle flex-center">
+									<img src="img/arrow-up.png" class="arrow-up" alt="arrow-up">
+									<div class="review-text">
+										<h4>John Doe</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+									</div>
+								</div>
+							</div>
+							<div class="flex-row flex-middle review">
+								<img src="img/avatar2.png" class="avatar" alt="avatar2">
+								<div class="flex-col flex-middle">
+									<div class="review-text">
+										<h4>John Doe</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+									</div>
+									<img src="img/arrow-down.png" class="arrow-down" alt="arrow-down">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="s-team">
+		<div class="container">
+			<div class="flex-col flex-middle section-text">
+				<h2>Our Team</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			</div>
+			<div class="slider-container">
+				<div class="slider">
+					<div class="flex-col slider-item">
+						<img src="img/user.png" alt="user">
+						<div class="slider-text">
+
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<img src="img/user2.png" alt="user">
+						<div class="slider-text">
+
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<img src="img/user.png" alt="user">
+						<div class="slider-text">
+
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<img src="img/user2.png" alt="user">
+						<div class="slider-text">
+
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<img src="img/user.png" alt="user">
+						<div class="slider-text">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="s-contact">
+		<div class="container">
+			<div class="flex-col flex-middle section-text">
+				<h2>Contact Us</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			</div>
+		</div>
+	</section>
 	<footer>
+		<div class="container">
+			<div class="flex-row flex-between">
+				<div class="flex-row flex-middle logo">
+					<img src="img/logo.png" alt="logo" class="logo-img">
+					<div class="flex-col logo-text">
+						<h1>Dart<br><span>service manager</span></h1>
+					</div>
+				</div>
+				<ul class="flex-row">
+					<li><a href="">Home</a></li>
+					<li><a href="">Service</a></li>
+					<li><a href="">Extension</a></li>
+					<li><a href="">Pricing</a></li>
+					<li><a href="">Help</a></li>
+				</ul>
+			</div>
+			<div class="flex-row flex-between privacy">
+				<ul class="flex-row">
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">About Us</a></li>
+				</ul>
+				<ul class="flex-row">
+					<li><img src="img/customer.png" alt=""></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<script src="js/scripts.min.js"></script>
 </body>
 

@@ -1,18 +1,54 @@
-@media only screen and (max-width: $xl) {
-	.banner {
-		&-text {
-			text-align: center;
-		}
-		iframe {
-			margin-top: 50px;
-		}
-	}
-}
-
-@media only screen and (max-width: $lg) {}
-
-@media only screen and (max-width: $md) {}
-
-@media only screen and (max-width: $sm) {}
-
-@media only screen and (max-width: $xs) {}
+			@media only screen and (max-width: $xl) {
+				.banner {
+					&-text {
+						text-align: center;
+					}
+					iframe {
+						margin-top: 50px;
+					}
+				}
+				.s-reviews {
+					.reviews-text {
+						width: 60%;
+						text-align: center;
+						.button-start {
+							margin-top: 10px!important;
+						}
+					}
+					.reviews {
+						width: 70%;
+						.review {
+							margin-top: 85px;
+						}
+					}
+				}
+			}
+			
+			@media only screen and (max-width: $lg) {
+				.services-boxes {
+					.services-box {
+						width: 100%!important;
+					}
+				}
+				.s-reviews {
+					.reviews {
+						.avatar {
+							display: none;
+						}
+					}
+				}
+			}
+			
+			@media only screen and (max-width: $md) {
+				.s-team {
+					padding-top: 100px;
+					padding-bottom: 100px;
+					.slider-container {
+						width: 70%;
+					}
+				}
+			}
+			
+			@media only screen and (max-width: $sm) {}
+			
+			@media only screen and (max-width: $xs) {}
