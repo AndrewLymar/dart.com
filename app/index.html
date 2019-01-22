@@ -11,26 +11,27 @@
 </head>
 
 <body>
-	<header>
+	<header id="home">
 		<div class="container">
-			<div class="flex-row">
-				<div class="flex-row flex-full flex-middle flex-between">
+			<nav class="flex-row">
+				<div class="flex-row flex-full flex-middle flex-between flex-around-md">
 					<div class="flex-row flex-middle flex-center logo">
 						<img src="img/logo.png" alt="logo" class="logo-img">
 						<div class="flex-col logo-text">
 							<h1>Dart<br><span>service manager</span></h1>
 						</div>
 					</div>
-					<ul class="flex-row">
-						<li><a href="">Home</a></li>
-						<li><a href="">Service</a></li>
-						<li><a href="">Extension</a></li>
-						<li><a href="">Pricing</a></li>
-						<li><a href="">Help</a></li>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#reviews">Reviews</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#privacy">Privacy</a></li>
 					</ul>
+					<img src="img/menu.svg" class="menu" alt="menu">
 					<button class="sigh-up">sign up</button>
 				</div>
-			</div>
+			</nav>
 			<div class="flex-row flex-top flex-around flex-wrap banner">
 				<div class="flex-col banner-text">
 					<h2>Lorem Ipsum Dolor sit amet</h2>
@@ -117,7 +118,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-services">
+	<section class="s-services" id="services">
 		<div class="container">
 			<div class="flex-col flex-middle section-text">
 				<h2>Services</h2>
@@ -132,7 +133,7 @@
 						</div>
 						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
 					</div>
-					<div class="flex-row flex-middle flex-between services-box-dropped">
+					<div class="flex-row flex-middle flex-col-md flex-between services-box-dropped">
 						<img src="img/statistics.jpg" alt="statistics">
 						<div class="services-box-dropped-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -148,7 +149,7 @@
 						</div>
 						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
 					</div>
-					<div class="flex-row flex-middle flex-between services-box-dropped">
+					<div class="flex-row flex-middle flex-col-md flex-between services-box-dropped">
 						<img src="img/statistics.jpg" alt="statistics">
 						<div class="services-box-dropped-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -164,7 +165,7 @@
 						</div>
 						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
 					</div>
-					<div class="flex-row flex-middle flex-between services-box-dropped">
+					<div class="flex-row flex-middle  flex-col-md flex-between services-box-dropped">
 						<img src="img/statistics.jpg" alt="statistics">
 						<div class="services-box-dropped-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -180,7 +181,7 @@
 						</div>
 						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
 					</div>
-					<div class="flex-row flex-middle flex-between services-box-dropped">
+					<div class="flex-row flex-middle flex-col-md flex-between services-box-dropped">
 						<img src="img/statistics.jpg" alt="statistics">
 						<div class="services-box-dropped-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -196,7 +197,7 @@
 						</div>
 						<img src="img/arrow_drop_down.png" class="drop-down" alt="arrow-drop-down">
 					</div>
-					<div class="flex-row flex-middle flex-between services-box-dropped">
+					<div class="flex-row flex-middle  flex-col-md flex-between services-box-dropped">
 						<img src="img/statistics.jpg" alt="statistics">
 						<div class="services-box-dropped-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -207,7 +208,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-reviews">
+	<section class="s-reviews" id="reviews">
 		<div class="container">
 			<div class="flex-row flex-between flex-col-xl flex-middle-xl">
 				<div class="flex-col flex-top flex-middle-xl reviews-text">
@@ -245,7 +246,7 @@
 
 		</div>
 	</section>
-	<section class="s-team">
+	<section class="s-team" id="team">
 		<div class="container">
 			<div class="flex-col flex-middle section-text">
 				<h2>Our Team</h2>
@@ -293,19 +294,38 @@
 			<div class="flex-col flex-middle section-text">
 				<h2>Contact Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+				<form action="" class="flex-col">
+					<div class="flex-row">
+						<div class="flex-row flex-between flex-wrap">
+							<input type="text" name="firstname" value="First Name">
+							<input type="text" name="lastname" value="Last Name">
+							<input type="text" name="email" value="Email">
+							<input type="text" name="phone" value="Phone">
+						</div>
+
+					</div>
+					<textarea name="message" value="Message" cols="30" rows="10"></textarea>
+					<div class="flex-row flex-middle subscribe-form">
+						<div class="flex-row flex-middle">
+							<input type="checkbox">
+							<p>subscribe to the newsletter</p>
+						</div>
+						<button>Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="privacy">
 		<div class="container">
-			<div class="flex-row flex-between">
-				<div class="flex-row flex-middle logo">
+			<div class="flex-row flex-between flex-center-md flex-wrap">
+				<div class="flex-row flex-middle flex-wrap logo">
 					<img src="img/logo.png" alt="logo" class="logo-img">
 					<div class="flex-col logo-text">
 						<h1>Dart<br><span>service manager</span></h1>
 					</div>
 				</div>
-				<ul class="flex-row">
+				<ul class="flex-row flex-between flex-wrap">
 					<li><a href="">Home</a></li>
 					<li><a href="">Service</a></li>
 					<li><a href="">Extension</a></li>
@@ -313,18 +333,28 @@
 					<li><a href="">Help</a></li>
 				</ul>
 			</div>
-			<div class="flex-row flex-between privacy">
-				<ul class="flex-row">
+			<div class="flex-row flex-between flex-center-md flex-wrap privacy">
+				<ul class="flex-row flex-between privacy-links">
 					<li><a href="">Privacy Policy</a></li>
 					<li><a href="">About Us</a></li>
 					<li><a href="">About Us</a></li>
 				</ul>
-				<ul class="flex-row">
-					<li><img src="img/customer.png" alt=""></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul class="flex-row flex-around social-footer">
+					<li>
+						<a href=""><img src="img/facebook.png" alt="facebook"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/twitter.png" alt="twitter"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/linkedin.png" alt="linkedin"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/print.png" alt="print"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/be.png" alt="be"></a>
+					</li>
 				</ul>
 			</div>
 		</div>

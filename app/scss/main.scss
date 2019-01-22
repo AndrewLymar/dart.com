@@ -30,17 +30,26 @@ header {
 		}
 	}
 	ul {
+		display: flex;
 		font-size: 15px;
 		font-weight: 700;
 		li {
 			margin-right: 50px;
 			a {
 				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			&:last-child {
 				margin-right: 0;
 			}
 		}
+	}
+	.menu {
+		display: none;
+		width: 42px;
+		height: 42px;
 	}
 	button.sigh-up {
 		padding: 6px 20px;
@@ -335,7 +344,6 @@ section {
 					.slick-center {
 						display: flex;
 						align-items: center;
-						//width: auto!important;
 						img {
 							width: 100%;
 							height: auto;
@@ -353,6 +361,32 @@ section {
 	.section-text {
 		p {
 			color: #061e37;
+		}
+	}
+	form {
+		max-width: 600px;
+		margin-top: 50px;
+		input,
+		textarea {
+			padding: 20px;
+			border: 1px solid #061e37;
+			border-radius: 5px;
+		}
+		input[type="text"] {
+			flex: 1 1 280px;
+			height: 50px;
+			margin-bottom: 20px;
+		}
+		textarea {
+			margin-top: 20px;
+		}
+		.subscribe-form {
+			p {
+				margin-left: 10px;
+			}
+			button {
+				margin-left: auto;
+			}
 		}
 	}
 }
@@ -396,7 +430,7 @@ footer {
 	}
 	.privacy {
 		margin-top: 55px;
-		ul {
+		&-links {
 			li {
 				list-style: disc;
 				a {
@@ -404,6 +438,13 @@ footer {
 				}
 				&:first-child {
 					list-style: none;
+				}
+			}
+		}
+		ul.social-footer {
+			li {
+				a {
+					cursor: pointer;
 				}
 			}
 		}

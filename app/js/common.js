@@ -1,4 +1,12 @@
 $(function () {
+	$('nav').mobileMenu({
+		menuIconClassName: ".menu",
+		mobileResolution: 770,
+		menuType: "fixed",
+		offsetToSticky: 50,
+		closeIconClassName: ".close-menu-icon"
+	});
+
 	$(".services-box-top").on('click', function (e) {
 		$droppedContent = $(this).next();
 		if ($droppedContent.css('display') == 'none') {
