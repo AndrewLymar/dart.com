@@ -5,6 +5,28 @@
 @import "global";
 @import "flex";
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900');
+ul {
+	li {
+		margin-right: 50px;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+button.section-button {
+	padding: 22px 25px;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 5px;
+	background-color: #1de9b6;
+	color: #fff;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
 header {
 	padding-top: 52px;
 	padding-bottom: 187px;
@@ -33,18 +55,6 @@ header {
 		display: flex;
 		font-size: 15px;
 		font-weight: 700;
-		li {
-			margin-right: 50px;
-			a {
-				text-decoration: none;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-			&:last-child {
-				margin-right: 0;
-			}
-		}
 	}
 	.menu {
 		display: none;
@@ -61,7 +71,7 @@ header {
 	.banner {
 		margin-top: 170px;
 		&-text {
-			max-width: 580px;
+			max-width: 560px;
 			h2 {
 				font-size: 55px;
 				font-weight: 900;
@@ -99,12 +109,6 @@ header {
 
 section {
 	.section-text {
-		h2,
-		h3,
-		h4,
-		p {
-			text-align: center;
-		}
 		h2 {
 			font-size: 45px;
 			font-weight: 600;
@@ -125,7 +129,7 @@ section {
 }
 
 .s-useful {
-	margin-top: 100px;
+	padding-top: 100px;
 	.box {
 		flex: 1 0 300px;
 		margin-top: 100px;
@@ -150,16 +154,9 @@ section {
 			}
 		}
 	}
-	button.get-started {
+	button {
 		margin-top: 78px;
 		margin-bottom: 100px;
-		padding: 22px 25px;
-		font-size: 15px;
-		font-weight: 700;
-		border-radius: 5px;
-		background-color: #1de9b6;
-		color: #fff;
-		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 	}
 	.statistics {
 		&-block {
@@ -373,19 +370,33 @@ section {
 			border-radius: 5px;
 		}
 		input[type="text"] {
-			flex: 1 1 280px;
 			height: 50px;
 			margin-bottom: 20px;
+			flex: 1 1 280px;
 		}
 		textarea {
 			margin-top: 20px;
 		}
+		input[type="text"]::placeholder,
+		textarea::placeholder {
+			font-size: 14px;
+			font-weight: 500;
+			color: #061e37;
+		}
+		input[type="checkbox"] {
+			cursor: pointer;
+		}
 		.subscribe-form {
+			margin-top: 20px;
 			p {
 				margin-left: 10px;
+				font-size: 15px;
+				font-weight: 500;
+				color: #061e37;
+				cursor: pointer;
 			}
 			button {
-				margin-left: auto;
+				padding: 19px 44px;
 			}
 		}
 	}
@@ -418,15 +429,6 @@ footer {
 		font-size: 15px;
 		font-weight: 700;
 		color: #fff;
-		li {
-			margin-right: 50px;
-			a {
-				text-decoration: none;
-			}
-			&:last-child {
-				margin-right: 0;
-			}
-		}
 	}
 	.privacy {
 		margin-top: 55px;

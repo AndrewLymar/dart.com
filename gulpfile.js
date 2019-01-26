@@ -21,7 +21,7 @@ var gulp = require('gulp'),
 gulp.task('js', function () {
 	return gulp.src([
 		'app/js/jquery.min.js',
-		'app/js/mobileMenu.min.js',
+		'app/js/mobileMenu.js',
 		'app/js/slick.min.js',
 		'app/js/common.js'
 		])
