@@ -10,7 +10,9 @@
 
 		var $menu = $(this);
 		var $menuList = $menu.find("ul");
-		var $menuLinks = $menu.find("a");
+		var $linksHeader = $('header').find("a");
+		var $linksFooter = $('footer .footer-menu-links').find("a");
+		var $menuLinks = $.merge($linksHeader, $linksFooter);
 		var $menuIcon = $(options.menuIconClassName);
 		var $closeIcon = $(options.closeIconClassName);
 		var currentMenuHeight = $menu.outerHeight();

@@ -20,10 +20,11 @@ $(function () {
 			}, 500);
 		}
 	});
-	$('.slider').slick({
+	$('.sliderimg').slick({
 		centerMode: true,
 		centerPadding: '0px',
 		slidesToShow: 3,
+		asNavFor: '.slidertext',
 		prevArrow: '<img src="img/move-to-prev.svg" alt="prev" class="prev">',
 		nextArrow: '<img src="img/move-to-next.svg" alt="prev" class="next">',
 		responsive: [
@@ -35,8 +36,40 @@ $(function () {
 					centerPadding: '0px',
 					slidesToShow: 1
 				}
-    }
-  ]
+    		}
+  		]
 
+	});
+	$('.slidertext').slick({
+		slidesToShow: 1,
+		asNavFor: '.sliderimg',
+		prevArrow: '',
+		nextArrow: '',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1
+				}
+    		}
+  		]
+
+	});
+	$('.review-slider').slick({
+		slidesToShow: 2,
+		vertical: true,
+		prevArrow: '<img src="img/arrow-up.png" class="arrow-up" alt="arrow-up">',
+		nextArrow: '<img src="img/arrow-down.png" class="arrow-down" alt="arrow-down">',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1
+				}
+    		}
+  		]
 	});
 });
