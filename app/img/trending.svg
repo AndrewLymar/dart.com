@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="10"
-   height="5"
-   viewBox="0 0 10 5"
+   width="20"
+   height="12"
+   viewBox="0 0 20 12"
    version="1.1"
    id="svg6"
-   sodipodi:docname="arrow-drop-down.svg"
+   sodipodi:docname="trending.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata12">
@@ -22,7 +22,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,23 +36,23 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="641"
+     inkscape:window-height="950"
      id="namedview8"
      showgrid="false"
      inkscape:zoom="9.8333333"
-     inkscape:cx="5"
-     inkscape:cy="3"
+     inkscape:cx="10"
+     inkscape:cy="6"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg6" />
   <path
-     d="M 0,0 5,5 10,0 Z"
+     d="m 14,0 2.29,2.29 -4.88,4.88 -4,-4 L 0,10.59 1.41,12 l 6,-6 4,4 6.3,-6.29 L 20,6 V 0 Z"
      id="path2"
      inkscape:connector-curvature="0" />
   <path
-     d="M -7,-10 H 17 V 14 H -7 Z"
+     d="M -2,-6 H 22 V 18 H -2 Z"
      id="path4"
      inkscape:connector-curvature="0"
      style="fill:none" />

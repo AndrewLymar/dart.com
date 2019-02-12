@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="10"
-   height="5"
-   viewBox="0 0 10 5"
+   width="20"
+   height="18"
+   viewBox="0 0 20 18"
    version="1.1"
    id="svg6"
-   sodipodi:docname="arrow-drop-down.svg"
+   sodipodi:docname="business.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata12">
@@ -41,20 +41,24 @@
      inkscape:window-height="480"
      id="namedview8"
      showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:zoom="9.8333333"
-     inkscape:cx="5"
-     inkscape:cy="3"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:cx="10"
+     inkscape:cy="6.7759473"
+     inkscape:window-x="406"
+     inkscape:window-y="310"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg6" />
   <path
-     d="M 0,0 5,5 10,0 Z"
+     d="M -2,-3 H 22 V 21 H -2 Z"
      id="path2"
-     inkscape:connector-curvature="0" />
-  <path
-     d="M -7,-10 H 17 V 14 H -7 Z"
-     id="path4"
      inkscape:connector-curvature="0"
      style="fill:none" />
+  <path
+     d="M 10,4 V 0 H 0 V 18 H 20 V 4 Z M 4,16 H 2 V 14 H 4 Z M 4,12 H 2 V 10 H 4 Z M 4,8 H 2 V 6 H 4 Z M 4,4 H 2 V 2 H 4 Z M 8,16 H 6 V 14 H 8 Z M 8,12 H 6 V 10 H 8 Z M 8,8 H 6 V 6 H 8 Z M 8,4 H 6 V 2 h 2 z m 10,12 h -8 v -2 h 2 v -2 h -2 v -2 h 2 V 8 H 10 V 6 h 8 z M 16,8 h -2 v 2 h 2 z m 0,4 h -2 v 2 h 2 z"
+     id="path4"
+     inkscape:connector-curvature="0" />
 </svg>

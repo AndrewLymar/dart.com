@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 gulp.task('js', function () {
 	return gulp.src([
 		'app/js/jquery.min.js',
+		'app/js/svg4everybody.min.js',
 		'app/js/mobileMenu.js',
 		'app/js/slick.min.js',
 		'app/js/common.js'
@@ -76,9 +77,12 @@ gulp.task('svg', function () {
 		}))
 		.pipe(cheerio({
 			run: function ($) {
+				/*
 				$('[fill]').removeAttr('fill');
+				*/
 				$('[stroke]').removeAttr('stroke');
 				$('[style]').removeAttr('style');
+
 			},
 			parserOptions: {
 				xmlMode: true
