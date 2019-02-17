@@ -31,8 +31,8 @@
 					<button class="sigh-up">sign up</button>
 				</div>
 			</nav>
-			<div class="flex-row flex-top jc-around wrap banner">
-				<div class="flex-col gap wrap banner-text">
+			<div class="flex-row flex-top jc-around wrap full-width banner">
+				<div class="flex-col gap wrap full-width banner-text">
 					<h2>Lorem Ipsum Dolor sit amet</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
 					<div class="flex-row jc-center-xl wrap">
@@ -40,7 +40,7 @@
 						<button class="button-try">Try for free</button>
 					</div>
 				</div>
-				<iframe src="https://player.vimeo.com/video/64794635?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="gap"></iframe>
+				<iframe src="https://player.vimeo.com/video/64794635?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="flex-row full-width gap"></iframe>
 			</div>
 		</div>
 	</header>
@@ -250,42 +250,42 @@
 					<button class="button-start">Get started</button>
 				</div>
 				<div class="flex-col ai-center reviews">
-					<div class="flex-col ai-center">
+					<div class="flex-col">
 						<div class="slider-review">
 							<div class="review">
-								<img src="img/user1.jpg" class="avatar" alt="avatar1">
-								<div class="flex-col ai-center jc-center">
-									<div class="ta-center-lg review-text">
-										<h4>Joe</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-									</div>
+								<div>
+									<img src="img/user1.jpg" class="avatar" alt="avatar1">
+								</div>
+								<div class="ta-center-lg review-text">
+									<h4>Joe</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								</div>
 							</div>
 							<div class="review">
-								<img src="img/user2.jpg" class="avatar" alt="avatar2">
-								<div class="flex-col ai-center">
-									<div class="ta-center-lg review-text">
-										<h4>Mark</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-									</div>
+								<div>
+									<img src="img/user2.jpg" class="avatar" alt="avatar2">
+								</div>
+								<div class="ta-center-lg review-text">
+									<h4>Mark</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								</div>
 							</div>
 							<div class="review">
-								<img src="img/user3.jpg" class="avatar" alt="avatar2">
-								<div class="flex-col ai-center">
-									<div class="ta-center-lg review-text">
-										<h4>John</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-									</div>
+								<div>
+									<img src="img/user3.jpg" class="avatar" alt="avatar2">
+								</div>
+								<div class="ta-center-lg review-text">
+									<h4>John</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								</div>
 							</div>
 							<div class="review">
-								<img src="img/user4.jpg" class="avatar" alt="avatar2">
-								<div class="flex-col ai-center">
-									<div class="ta-center-lg review-text">
-										<h4>Alice</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-									</div>
+								<div>
+									<img src="img/user4.jpg" class="avatar" alt="avatar2">
+								</div>
+								<div class="ta-center-lg review-text">
+									<h4>Alice</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								</div>
 							</div>
 						</div>
@@ -357,18 +357,18 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 				<form action="" class="flex-col">
 					<div class="flex-row">
-						<div class="flex-row jc-between wrap">
-							<div class="flex-row full-width gap">
-								<input type="text" name="firstname" value="" class="gap" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="First Name">
+						<div class="flex-row jc-between full-width wrap">
+							<div class="flex-row full-width input-container gap">
+								<input type="text" name="firstname" value="" class="gap full-width" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="First Name">
 							</div>
-							<div class="flex-row full-width gap">
-								<input type="text" name="lastname" value="" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="Last Name" class="gap">
+							<div class="flex-row full-width input-container gap">
+								<input type="text" name="lastname" value="" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="Last Name" class="gap full-width">
 							</div>
-							<div class="flex-row full-width gap">
-								<input type="text" name="email" value="" required="required" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Email" class="gap">
+							<div class="flex-row full-width input-container gap">
+								<input type="text" name="email" value="" required="required" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Email" class="gap full-width">
 							</div>
-							<div class="flex-row full-width gap">
-								<input type="text" name="phone" value="" required="required" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Phone" class="gap">
+							<div class="flex-row full-width input-container gap">
+								<input type="text" name="phone" value="" required="required" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Phone" class="gap full-width">
 							</div>
 						</div>
 

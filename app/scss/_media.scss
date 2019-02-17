@@ -8,18 +8,24 @@
 		}
 	}
 	.s-reviews {
-		.reviews-text {
-			width: 60%;
-			text-align: center;
-			.button-start {
-				margin-top: 10px;
-				margin-bottom: 55px;
-			}
-		}
 		.reviews {
-			width: 70%;
-			.review {
-				margin-top: 85px;
+			.slider-review {
+				.slick-track {
+					.reviews-text {
+						width: 60%;
+						text-align: center;
+						.button-start {
+							margin-top: 10px;
+							margin-bottom: 55px;
+						}
+					}
+					.reviews {
+						width: 70%;
+						.review {
+							margin-top: 85px;
+						}
+					}
+				}
 			}
 		}
 	}

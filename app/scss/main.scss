@@ -100,6 +100,7 @@ header {
 	.banner {
 		margin-top: 170px;
 		&-text {
+			flex-basis: 525px;
 			max-width: 560px;
 			h2 {
 				font-size: 55px;
@@ -132,6 +133,9 @@ header {
 				font-weight: 700;
 				color: #061e37;
 			}
+		}
+		iframe {
+			flex-basis: 618px;
 		}
 	}
 }
@@ -269,12 +273,16 @@ section {
 	background: url("../img/review-bg.jpg") no-repeat;
 	background-size: cover;
 	.reviews-text {
-		width: 40%;
+		max-width: 40%;
 		color: #fff;
 		h2 {
+			max-width: 100%;
 			font-size: 45px;
 			font-weight: 600;
 			line-height: 1.1em;
+		}
+		p {
+			max-width: 100%;
 		}
 		button.button-start {
 			margin-top: 78px;
@@ -286,6 +294,7 @@ section {
 			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 		}
 	}
+	/*
 	.reviews {
 		width: 50%;
 		.slider-review {
@@ -298,6 +307,63 @@ section {
 				justify-content: center;
 				fill: #fff;
 				cursor: pointer;
+			}
+			.slick-track {
+				//max-width: 695px!important;
+			}
+			.arrow-up {
+				margin-bottom: 33px;
+			}
+			.arrow-down {
+				margin-top: 33px;
+			}
+			.review {
+				display: flex;
+				align-items: center;
+				margin-top: 35px;
+				margin-bottom: 35px;
+				.avatar {
+					height: 76px;
+					margin-right: 50px;
+					border-radius: 50%;
+				}
+				&-text {
+					padding: 32px;
+					border-radius: 5px;
+					background: #fff;
+					h4 {
+						font-size: 18px;
+						font-weight: 700;
+						color: #061e37;
+					}
+					p {
+						font-size: 15px;
+						color: #78909c;
+						line-height: 25px;
+					}
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	*/
+	.reviews {
+		width: 50%;
+		.slider-review {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.arrow-up,
+			.arrow-down {
+				display: flex;
+				justify-content: center;
+				fill: #fff;
+				cursor: pointer;
+			}
+			.slick-track {
+				max-width: 695px!important;
 			}
 			.arrow-up {
 				margin-bottom: 33px;
@@ -312,7 +378,7 @@ section {
 				margin-bottom: 35px;
 				.avatar {
 					width: 76px;
-					height: 76px;
+					height: auto;
 					margin-right: 50px;
 					border-radius: 50%;
 				}
@@ -355,7 +421,6 @@ section {
 				position: relative;
 				display: flex;
 				align-items: center;
-				flex: 1 1;
 				.prev,
 				.next {
 					display: flex;
@@ -364,10 +429,7 @@ section {
 					cursor: pointer;
 				}
 				.slick-list {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					flex: 1 1;
+					max-width: 100%;
 					.slick-track {
 						display: flex;
 						align-items: center;
@@ -387,6 +449,7 @@ section {
 								opacity: 0.2;
 							}
 							.slider-text {
+								max-width: 100%;
 								text-align: center;
 								h3 {
 									font-size: 18px;
@@ -429,10 +492,12 @@ section {
 			border: 1px solid #061e37;
 			border-radius: 5px;
 		}
+		.input-container {
+			flex: 1 1 280px;
+		}
 		input[type="text"] {
 			height: 50px;
 			margin-bottom: 20px;
-			flex: 1 1 280px;
 		}
 		textarea {
 			margin-top: 20px;
