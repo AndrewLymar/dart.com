@@ -294,61 +294,6 @@ section {
 			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 		}
 	}
-	/*
-	.reviews {
-		width: 50%;
-		.slider-review {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			.arrow-up,
-			.arrow-down {
-				display: flex;
-				justify-content: center;
-				fill: #fff;
-				cursor: pointer;
-			}
-			.slick-track {
-				//max-width: 695px!important;
-			}
-			.arrow-up {
-				margin-bottom: 33px;
-			}
-			.arrow-down {
-				margin-top: 33px;
-			}
-			.review {
-				display: flex;
-				align-items: center;
-				margin-top: 35px;
-				margin-bottom: 35px;
-				.avatar {
-					height: 76px;
-					margin-right: 50px;
-					border-radius: 50%;
-				}
-				&-text {
-					padding: 32px;
-					border-radius: 5px;
-					background: #fff;
-					h4 {
-						font-size: 18px;
-						font-weight: 700;
-						color: #061e37;
-					}
-					p {
-						font-size: 15px;
-						color: #78909c;
-						line-height: 25px;
-					}
-				}
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
-	*/
 	.reviews {
 		width: 50%;
 		.slider-review {
@@ -437,7 +382,6 @@ section {
 							border-radius: 50%;
 						}
 						.slider-item {
-							position: relative;
 							display: flex;
 							align-items: center;
 							justify-content: center;
@@ -508,8 +452,49 @@ section {
 			font-weight: 500;
 			color: #061e37;
 		}
-		input[type="checkbox"] {
+		.container-checkbox {
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			font-size: 15px;
+			border: 0;
+			color: #061e37;
+			user-select: none;
 			cursor: pointer;
+			input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+			}
+			input:checked~.checkmark {
+				border: none;
+				background-color: #061e37;
+			}
+			input:checked~.checkmark:after {
+				display: block;
+			}
+			.checkmark {
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				top: 20%;
+				left: 0;
+				border-radius: 3px;
+				background-color: #fff;
+				border: 2px solid #061e37;
+				&:after {
+					position: absolute;
+					display: none;
+					content: "";
+					width: 3px;
+					height: 8px;
+					top: 2px;
+					left: 6px;
+					border: solid white;
+					border-width: 0 2px 2px 0;
+					transform: rotate(45deg);
+				}
+			}
 		}
 		.subscribe-form {
 			margin-top: 20px;

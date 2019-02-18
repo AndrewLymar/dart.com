@@ -357,28 +357,28 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 				<form action="" class="flex-col">
 					<div class="flex-row">
-						<div class="flex-row jc-between full-width wrap">
-							<div class="flex-row full-width input-container gap">
+						<div class="flex-row jc-between wrap">
+							<div class="flex-row gap input-container">
 								<input type="text" name="firstname" value="" class="gap full-width" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="First Name">
 							</div>
-							<div class="flex-row full-width input-container gap">
+							<div class="flex-row gap input-container">
 								<input type="text" name="lastname" value="" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="Last Name" class="gap full-width">
 							</div>
-							<div class="flex-row full-width input-container gap">
+							<div class="flex-row gap input-container">
 								<input type="text" name="email" value="" required="required" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Email" class="gap full-width">
 							</div>
-							<div class="flex-row full-width input-container gap">
+							<div class="flex-row gap input-container">
 								<input type="text" name="phone" value="" required="required" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Phone" class="gap full-width">
 							</div>
 						</div>
-
 					</div>
 					<textarea name="message" value="" cols="30" rows="10" placeholder="Message"></textarea>
 					<div class="flex-row jc-between ai-center wrap subscribe-form">
-						<div class="flex-row gap ai-center">
-							<input type="checkbox" id="subscribe-check">
-							<label for="subscribe-check"><p>subscribe to the newsletter</p></label>
-						</div>
+						<label class="flex-row ai-center gap container-checkbox">
+ 							subscribe to the newslette
+  							<input type="checkbox" checked="checked">
+  							<span class="checkmark"></span>
+						</label>
 						<button class="gap section-button">Send</button>
 					</div>
 				</form>
@@ -406,7 +406,7 @@
 				<ul class="flex-row jc-between privacy-links">
 					<li><a href="">Privacy Policy</a></li>
 					<li><a href="">About Us</a></li>
-					<li><a href="">About Us</a></li>
+					<li><a href="">Call</a></li>
 				</ul>
 				<ul class="flex-row jc-around social-footer">
 					<li>

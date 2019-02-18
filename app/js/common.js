@@ -25,7 +25,7 @@ $(function () {
 		centerMode: true,
 		centerPadding: '0px',
 		slidesToShow: 3,
-		autoplay: false,
+		autoplay: true,
 		asNavFor: '.slider-team-description',
 		prevArrow: '<div class="prev"><svg width="32" height="32" viewBox="0 0 32 32"><use xlink: href = "img/sprite.svg#move-to-prev" ></use></svg></div>',
 		nextArrow: '<div class="next"><svg width="32" height="32" viewBox="0 0 32 32"><use xlink: href = "img/sprite.svg#move-to-next"></use></svg ></div> ',
@@ -45,7 +45,7 @@ $(function () {
 	$('.slider-team-description').slick({
 		slidesToShow: 1,
 		asNavFor: '.slider-team-img',
-		autoplay: false,
+		autoplay: true,
 		prevArrow: '',
 		nextArrow: '',
 		responsive: [
@@ -64,7 +64,7 @@ $(function () {
 	$('.slider-review').slick({
 		slidesToShow: 2,
 		vertical: true,
-		autoplay: false,
+		autoplay: true,
 		prevArrow: '<div class="arrow-up"><svg width="23" height="14" viewBox="0 0 23 14"><use xlink: href = "img/sprite.svg#arrow-up"></use></svg></div>',
 		nextArrow: '<div class="arrow-down"><svg width="23" height="15" viewBox="0 0 23 15"><use xlink: href = "img/sprite.svg#arrow-down"></use></svg ></div>',
 		responsive: [

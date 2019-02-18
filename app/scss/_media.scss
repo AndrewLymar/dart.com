@@ -127,6 +127,17 @@
 			}
 		}
 	}
+	.s-reviews {
+		.reviews-text {
+			max-width: 100%;
+			.button-start {
+				margin-bottom: 50px;
+			}
+		}
+		.reviews {
+			width: 100%;
+		}
+	}
 	footer {
 		ul {
 			width: 100%;
@@ -168,16 +179,6 @@
 			}
 		}
 	}
-	.s-reviews {
-		.reviews {
-			width: 100%;
-			.review-text {
-				h4 {
-					text-align: center;
-				}
-			}
-		}
-	}
 	.s-team {
 		.sliders {
 			.slider-container {
@@ -200,6 +201,11 @@
 					}
 				}
 			}
+		}
+	}
+	.s-contact {
+		.section-button {
+			margin-top: 25px;
 		}
 	}
 	footer {
