@@ -13,7 +13,7 @@
 	<header id="home">
 		<div class="container">
 			<nav class="flex-row">
-				<div class="flex-row full-width ai-center jc-between jc-around-md">
+				<div class="flex-row ai-center jc-between jc-around-md full-width ">
 					<div class="flex-row ai-center jc-center logo">
 						<img src="img/logo.png" alt="logo" class="logo-img">
 						<div class="flex-col logo-text">
@@ -27,7 +27,9 @@
 						<li><a href="#team">Team</a></li>
 						<li><a href="#privacy">Privacy</a></li>
 					</ul>
-					<img src="img/menu.svg" class="menu" alt="menu">
+					<svg width="42" height="42" viewBox="0 0 42 42" class="menu">
+							<use xlink:href="img/sprite.svg#menu"></use>
+					</svg>
 					<button class="sigh-up">sign up</button>
 				</div>
 			</nav>
@@ -387,14 +389,14 @@
 	</section>
 	<footer id="privacy">
 		<div class="container">
-			<div class="flex-row jc-between jc-center-md wrap">
-				<div class="flex-row ai-center wrap logo">
+			<div class="flex-row jc-between jc-center-md wrap footer-top">
+				<div class="flex-row ai-center gap wrap logo">
 					<img src="img/logo.png" alt="logo" class="logo-img">
 					<div class="flex-col logo-text">
 						<h1>Dart<br><span>service manager</span></h1>
 					</div>
 				</div>
-				<ul class="flex-row jc-between wrap footer-menu-links">
+				<ul class="flex-row jc-between ai-center wrap">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#reviews">Reviews</a></li>
@@ -402,43 +404,44 @@
 					<li><a href="#privacy">Privacy</a></li>
 				</ul>
 			</div>
-			<div class="flex-row jc-between jc-center-md wrap privacy">
-				<ul class="flex-row jc-between privacy-links">
+			<div class="flex-row jc-between jc-center-md wrap footer-bottom">
+				<ul class="flex-row jc-between js-sm-center wrap privacy">
 					<li><a href="">Privacy Policy</a></li>
 					<li><a href="">About Us</a></li>
-					<li><a href="">Call</a></li>
+					<li><a href="">Address</a></li>
+					<li><a href="">Call Us</a></li>
 				</ul>
-				<ul class="flex-row jc-around social-footer">
-					<li>
-						<a href="">
+				<ul class="flex-row jc-around ai-center gap-large social">
+					<li class="flex-row">
+						<a href="" class="flex-row ai-center">
 							<svg width="19" height="18" viewBox="0 0 19 18">
 								<use xlink:href="img/sprite.svg#facebook"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="" class="flex-row ai-center">
 							<svg width="17" height="16" viewBox="0 0 17 16">
 								<use xlink:href="img/sprite.svg#twitter"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="" class="flex-row ai-center">
 							<svg width="19" height="18" viewBox="0 0 19 18">
 								<use xlink:href="img/sprite.svg#linkedin"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="" class="flex-row ai-center">
 							<svg width="19" height="18" viewBox="0 0 19 18">
 								<use xlink:href="img/sprite.svg#dribbble"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="" class="flex-row ai-center">
 							<svg width="24" height="16" viewBox="0 0 24 16">
 								<use xlink:href="img/sprite.svg#behance"></use>
 							</svg>

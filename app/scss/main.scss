@@ -4,6 +4,9 @@
 @import "reset";
 @import "flex";
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900');
+
+/*****----------------GENERAL----------------*****/
+
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -17,11 +20,6 @@ body {
 	padding-left: 25px;
 	padding-right: 25px;
 	margin: 0 auto;
-}
-
-.addaptive-img {
-	max-width: 100%;
-	height: auto;
 }
 
 button {
@@ -40,10 +38,13 @@ ul {
 			}
 		}
 		&:last-child {
-			margin-right: 0;
+			margin-right: 0!important;
 		}
 	}
 }
+
+
+/**********************************************/
 
 .logo {
 	&-img {
@@ -309,41 +310,41 @@ section {
 			}
 			.slick-track {
 				max-width: 695px!important;
-			}
-			.arrow-up {
-				margin-bottom: 33px;
-			}
-			.arrow-down {
-				margin-top: 33px;
-			}
-			.review {
-				display: flex;
-				align-items: center;
-				margin-top: 35px;
-				margin-bottom: 35px;
-				.avatar {
-					width: 76px;
-					height: auto;
-					margin-right: 50px;
-					border-radius: 50%;
+				.arrow-up {
+					margin-bottom: 33px;
 				}
-				&-text {
-					padding: 32px;
-					border-radius: 5px;
-					background: #fff;
-					h4 {
-						font-size: 18px;
-						font-weight: 700;
-						color: #061e37;
-					}
-					p {
-						font-size: 15px;
-						color: #78909c;
-						line-height: 25px;
-					}
+				.arrow-down {
+					margin-top: 33px;
 				}
-				&:last-child {
-					margin-bottom: 0;
+				.review {
+					display: flex;
+					align-items: center;
+					margin-top: 35px;
+					margin-bottom: 35px;
+					.avatar {
+						width: 76px;
+						height: auto;
+						margin-right: 50px;
+						border-radius: 50%;
+					}
+					&-text {
+						padding: 32px;
+						border-radius: 5px;
+						background: #fff;
+						h4 {
+							font-size: 18px;
+							font-weight: 700;
+							color: #061e37;
+						}
+						p {
+							font-size: 15px;
+							color: #78909c;
+							line-height: 25px;
+						}
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
 				}
 			}
 		}
@@ -465,13 +466,15 @@ section {
 				position: absolute;
 				opacity: 0;
 				cursor: pointer;
-			}
-			input:checked~.checkmark {
-				border: none;
-				background-color: #061e37;
-			}
-			input:checked~.checkmark:after {
-				display: block;
+				&:checked {
+					~.checkmark {
+						border: none;
+						background-color: #061e37;
+						&:after {
+							display: block;
+						}
+					}
+				}
 			}
 			.checkmark {
 				position: absolute;
@@ -516,33 +519,19 @@ footer {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: #061e37;
-	.logo {
-		&-img {
-			margin-right: 10px;
-			cursor: pointer;
-		}
-		&-text {
-			color: #fff;
-			cursor: pointer;
-			h1 {
-				font-size: 15px;
-				font-weight: 300;
-				line-height: 1.0em;
-				text-transform: uppercase;
-				span {
-					font-weight: 700;
-				}
-			}
-		}
-	}
 	ul {
 		font-size: 15px;
 		font-weight: 700;
 		color: #fff;
 	}
-	.privacy {
+	.logo {
+		&-text {
+			color: #fff;
+		}
+	}
+	.footer-bottom {
 		margin-top: 55px;
-		&-links {
+		ul.privacy {
 			li {
 				list-style: disc;
 				a {
@@ -553,7 +542,7 @@ footer {
 				}
 			}
 		}
-		ul.social-footer {
+		ul.social {
 			li {
 				margin-right: 20px;
 				a {

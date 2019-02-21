@@ -7,6 +7,22 @@ $(function () {
 		closeIconClassName: ".close-menu-icon"
 	});
 
+	$('.slider-review').slick({
+		slidesToShow: 2,
+		vertical: true,
+		autoplay: true,
+		prevArrow: '<div class="arrow-up"><svg width="23" height="14" viewBox="0 0 23 14"><use xlink: href = "img/sprite.svg#arrow-up"></use></svg></div>',
+		nextArrow: '<div class="arrow-down"><svg width="23" height="15" viewBox="0 0 23 15"><use xlink: href = "img/sprite.svg#arrow-down"></use></svg ></div>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1
+				}
+    		}
+  		]
+	});
+
 	$(".services-box").on('click', function (e) {
 		$droppedContent = $(this).find(".services-box-dropped");
 		if ($droppedContent.css('display') == 'none') {
@@ -42,6 +58,7 @@ $(function () {
   		]
 
 	});
+
 	$('.slider-team-description').slick({
 		slidesToShow: 1,
 		asNavFor: '.slider-team-img',
@@ -55,22 +72,6 @@ $(function () {
 					arrows: true,
 					centerMode: false,
 					centerPadding: '0px',
-					slidesToShow: 1
-				}
-    		}
-  		]
-
-	});
-	$('.slider-review').slick({
-		slidesToShow: 2,
-		vertical: true,
-		autoplay: true,
-		prevArrow: '<div class="arrow-up"><svg width="23" height="14" viewBox="0 0 23 14"><use xlink: href = "img/sprite.svg#arrow-up"></use></svg></div>',
-		nextArrow: '<div class="arrow-down"><svg width="23" height="15" viewBox="0 0 23 15"><use xlink: href = "img/sprite.svg#arrow-down"></use></svg ></div>',
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
 					slidesToShow: 1
 				}
     		}

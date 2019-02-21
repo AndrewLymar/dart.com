@@ -8,16 +8,18 @@
 		}
 	}
 	.s-reviews {
+		.reviews-text {
+			.button-start {
+				margin-top: 10px;
+				margin-bottom: 55px;
+			}
+		}
 		.reviews {
 			.slider-review {
 				.slick-track {
 					.reviews-text {
 						width: 60%;
 						text-align: center;
-						.button-start {
-							margin-top: 10px;
-							margin-bottom: 55px;
-						}
 					}
 					.reviews {
 						width: 70%;
@@ -41,9 +43,11 @@
 			}
 		}
 	}
-	.services-boxes {
-		.services-box {
-			width: 100%!important;
+	.s-services {
+		.services-boxes {
+			.services-box {
+				width: 100%;
+			}
 		}
 	}
 	.s-reviews {
@@ -139,19 +143,33 @@
 		}
 	}
 	footer {
+		padding-top: 25px;
+		padding-bottom: 25px;
 		ul {
 			width: 100%;
 			li {
 				margin: 0;
-				list-style: none!important;
 			}
 		}
 		.logo {
 			margin-bottom: 25px;
 		}
-		.privacy {
-			.social-footer {
+		.footer-bottom {
+			margin-top: 0;
+			ul.privacy,
+			ul.social {
 				margin-top: 25px;
+			}
+			ul.scolial {
+				width: 100%;
+				li {
+					list-style: none!important;
+				}
+			}
+			ul.privacy {
+				li {
+					list-style: none;
+				}
 			}
 		}
 	}
@@ -206,14 +224,6 @@
 	.s-contact {
 		.section-button {
 			margin-top: 25px;
-		}
-	}
-	footer {
-		ul {
-			width: 100%;
-			li {
-				margin: 0;
-			}
 		}
 	}
 }
