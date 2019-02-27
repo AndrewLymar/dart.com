@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	cleanCSS = require('gulp-clean-css'),
+	concatCss = require('gulp-concat-css'),
 	rename = require('gulp-rename'),
 	del = require('del'),
 	imagemin = require('gulp-imagemin'),
@@ -50,13 +51,19 @@ gulp.task('sass', function () {
 		.pipe(sass({
 			outputStyle: 'expand'
 		}).on("error", notify.onError()))
-		.pipe(rename({
-			suffix: '.min',
-			prefix: ''
-		}))
+		.pipe(autoprefixer(['last 5 versions']))
+		.pipe(gulp.dest('app/css'))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
+});
+
+gulp.task('css', function () {
+	return gulp.src('app/css/**/*.css')
 		.pipe(autoprefixer(['last 5 versions']))
 		.pipe(cleanCSS())
-		.pipe(gulp.dest('app/css'))
+		.pipe(concatCss("style.min.css"))
+		.pipe(gulp.dest('dist/css'))
 		.pipe(browserSync.reload({
 			stream: true
 		}));
@@ -103,16 +110,12 @@ gulp.task('imagemin', function () {
 		.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['removedist', 'svg', 'imagemin', 'sass', 'js'], function () {
+gulp.task('build', ['removedist', 'svg', 'imagemin', 'sass', 'css', 'js'], function () {
 
 	var buildFiles = gulp.src([
 		'app/*.html',
 		'app/.htaccess',
 		]).pipe(gulp.dest('dist'));
-
-	var buildCss = gulp.src([
-		'app/css/main.min.css',
-		]).pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
